@@ -1,0 +1,10 @@
+# robots.txt for okamiya-tomohiro-website
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://taito-kosodate.com/sitemap.xml
+
+# Specific crawl-delay settings
+Crawl-delay: 1
