@@ -1,0 +1,812 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.mode{text-decoration:none}
+.mode[aria-current="page"]{background:var(--yellow);border-color:#2A2112}
+.mode[aria-current="page"] small{color:#2A2112}
+</style></head><body>
+<title>書類をつくる｜台東区 子育てナビ</title>
+<meta name="color-scheme" content="light only">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --yellow:#FFC400;
+  --yellow-soft:#FFF3B8;
+  --yellow-wash:#FFFAE0;
+  --ink:#2A2112;
+  --ink-sub:#5E5340;
+  --line:#E7D9A6;
+  --bg:#FFFEF8;
+  --card:#FFFFFF;
+  --link:#164E8A;
+  --warn-bg:#FFF0D6;
+  --warn-ink:#7A3B00;
+  --mint:#DDF2E7;
+  --mint-ink:#0E5B3A;
+  --font:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.85;-webkit-text-size-adjust:100%}
+a{color:var(--link)}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--link);outline-offset:2px;border-radius:6px}
+
+/* hero */
+.hero{background:var(--yellow-wash);color:var(--ink);padding:24px 20px 30px;border-bottom:8px solid var(--yellow)}
+.hero-in{max-width:720px;margin:0 auto}
+.hero-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.hero-top svg{width:56px;height:56px;flex:0 0 auto}
+.hero small{display:block;font-weight:700;font-size:14px;letter-spacing:.04em;margin:0}
+.hero h1{margin:0;font-size:clamp(28px,8vw,40px);line-height:1.3;font-weight:900}
+.hero p{margin:14px 0 0;font-size:17px;font-weight:500}
+.asof{margin-top:14px;font-size:12.5px;background:var(--card);border:1px solid var(--line);display:inline-block;padding:4px 12px;border-radius:999px}
+
+/* sticky nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:2px solid var(--yellow)}
+.nav-in{max-width:720px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
+.nav-in::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;text-decoration:none;color:var(--ink);font-weight:700;font-size:14px;padding:7px 14px;border-radius:999px;border:2px solid var(--line);background:var(--card);white-space:nowrap}
+.nav a[aria-current="true"]{background:var(--yellow);border-color:var(--yellow);color:#2A2112}
+
+main{max-width:720px;margin:0 auto;padding:8px 16px 40px}
+
+/* route (timeline) */
+.stage{position:relative;padding:28px 0 6px 52px}
+.stage::before{content:"";position:absolute;left:19px;top:0;bottom:0;width:6px;background:var(--yellow);border-radius:3px}
+.stage.first::before{top:40px}
+.stage.last::before{bottom:calc(100% - 64px)}
+.stop{position:absolute;left:0;top:26px;width:44px;height:44px;border-radius:50%;background:var(--yellow);color:#2A2112;border:4px solid var(--bg);box-shadow:0 0 0 3px #2A2112;display:grid;place-items:center;font-weight:900;font-size:19px}
+.stage h2{margin:0;font-size:24px;line-height:1.35;font-weight:900}
+.when{margin:2px 0 0;color:var(--ink-sub);font-size:14px;font-weight:500}
+.lead{margin:12px 0 14px;font-size:16.5px}
+
+.deadline{background:var(--warn-bg);color:var(--warn-ink);border-radius:14px;padding:14px 16px;margin:0 0 16px;font-size:16.5px}
+.deadline b{font-weight:900}
+.deadline ul{margin:8px 0 0;padding-left:1.2em}
+.deadline li{margin:3px 0}
+
+/* services */
+.svc{border-top:1px solid var(--line)}
+.svc:last-child{border-bottom:1px solid var(--line)}
+.svc summary{list-style:none;cursor:pointer;padding:16px 2px 16px 0;display:grid;grid-template-columns:46px 1fr 24px;gap:0 12px;align-items:start;min-height:56px}
+.ic{grid-column:1;grid-row:1;width:46px;height:46px;border-radius:14px;background:var(--mint);color:var(--mint-ink);display:grid;place-items:center}
+.ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.txt{grid-column:2;display:flex;flex-direction:column;gap:2px}
+.svc summary::-webkit-details-marker{display:none}
+.svc summary::after{content:"＋";grid-column:3;grid-row:1;justify-self:end;font-weight:900;font-size:20px;line-height:1.4;color:var(--ink-sub)}
+.svc[open] summary::after{content:"－"}
+.svc .name{font-weight:900;font-size:18.5px;line-height:1.45}
+.svc .one{font-size:15.5px;color:var(--ink-sub);line-height:1.6}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+.tag{font-size:12.5px;font-weight:700;padding:1px 10px;border-radius:999px;background:var(--mint);color:var(--mint-ink)}
+.tag.must{background:#2A2112;color:#FFC400}
+.body{padding:0 0 20px;font-size:17px;line-height:1.85}
+.body dl{margin:0}
+.body dt{font-weight:700;color:var(--mint-ink);font-size:14px;margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.body dt:first-child{margin-top:2px;padding-top:0;border-top:0}
+.body dd{margin:3px 0 0}
+.body b{font-weight:900;background:linear-gradient(transparent 60%,var(--yellow-soft) 60%)}
+.dad{margin:16px 0 0;padding:12px 14px;background:var(--yellow-wash);border-left:5px solid var(--yellow);border-radius:0 10px 10px 0;font-size:16px}
+.dad b{font-weight:900;background:none}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{font-size:15px;font-weight:700;text-decoration:none;padding:12px 16px;min-height:48px;display:inline-flex;align-items:center;border-radius:999px;background:var(--ink);color:var(--bg)}
+.links a.tel{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+
+.mini{margin:14px 0 0;padding:0;list-style:none}
+.mini li{padding:12px 0;border-top:1px solid var(--line);font-size:16.5px}
+.mini li:last-child{border-bottom:1px solid var(--line)}
+.mini a{font-weight:700}
+.mini span{display:block;color:var(--ink-sub);font-size:14.5px}
+
+/* help + contacts */
+.sec{padding:32px 0 0}
+.sec h2{margin:0 0 6px;font-size:22px;font-weight:900;border-left:8px solid var(--yellow);padding-left:12px}
+.tel-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14.5px}
+.tel-table th,.tel-table td{text-align:left;padding:10px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.tel-table th{font-weight:700;width:58%}
+.tel-table td a{font-weight:700;white-space:nowrap}
+
+.done{text-align:center;padding:40px 8px 8px}
+.done svg{width:96px;height:96px}
+.done h2{margin:8px 0 6px;font-size:22px;font-weight:900}
+.done p{margin:0 auto;max-width:28em;font-size:16.5px;color:var(--ink-sub)}
+.find{margin-top:20px;padding:20px 16px 18px;background:var(--yellow-wash);border:2px solid var(--line);border-radius:22px}
+.find h2{margin:0;font-size:22px;font-weight:900;border-left:8px solid var(--yellow);padding-left:12px}
+.band{margin-top:44px;padding-top:22px;border-top:8px solid var(--yellow)}
+.band h2{margin:0;font-size:24px;font-weight:900}
+.band p{margin:6px 0 0;color:var(--ink-sub);font-size:16px}
+.nav .sep{flex:0 0 auto;width:2px;background:var(--line);margin:4px 2px;border-radius:2px}
+.find .lead{margin:10px 0 14px}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pbtn{font:inherit;color:var(--ink);text-align:left;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:14px 12px;min-height:112px;display:flex;flex-direction:column;gap:8px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.pbtn b{font-size:17.5px;font-weight:900;line-height:1.4}
+.pbtn small{display:block;font-size:13.5px;color:var(--ink-sub);font-weight:500;line-height:1.5}
+.pbtn[aria-expanded="true"]{background:var(--yellow);border-color:#2A2112;color:#2A2112}
+.pbtn[aria-expanded="true"] small{color:#2A2112}
+.pbtn[aria-expanded="true"] .ic{background:#FFFFFF}
+.ppanel{margin-top:12px;border:2px solid #2A2112;border-radius:18px;padding:4px 16px 8px;background:var(--card)}
+.ppanel[hidden]{display:none}
+.ppanel h3{margin:14px 0 6px;font-size:19px;font-weight:900}
+.urgent{background:var(--warn-bg);color:var(--warn-ink);border-radius:12px;padding:10px 12px;margin:8px 0 4px;font-size:16.5px;font-weight:700}
+.pitem{display:block;width:100%;text-align:left;font:inherit;color:var(--ink);background:none;border:0;border-top:1px solid var(--line);padding:14px 0;text-decoration:none;cursor:pointer;min-height:56px}
+.pitem .t{display:block;font-weight:900;font-size:17.5px;line-height:1.5}
+.pitem .d{display:block;color:var(--ink-sub);font-size:15px;line-height:1.6}
+.pitem .go{display:inline-block;margin-top:4px;font-size:14px;font-weight:700;color:var(--link)}
+@keyframes flash{from{background:var(--yellow-soft)}to{background:transparent}}
+.svc.flash{animation:flash 1.8s ease-out}
+@media (prefers-reduced-motion:reduce){.svc.flash{animation:none}}
+footer{background:var(--yellow-wash);border-top:4px solid var(--yellow);padding:26px 20px calc(30px + env(safe-area-inset-bottom,0px));font-size:13.5px;color:var(--ink-sub)}
+footer .in{max-width:720px;margin:0 auto}
+footer p{margin:0 0 10px}
+
+
+
+/* ===== 書類作成 ===== */
+.notice{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:8px;padding:10px 12px;font-size:.88rem;margin:12px 0}
+.notice b{display:block;margin-bottom:2px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 8px;margin:0 -16px;padding-left:16px;padding-right:16px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:2px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:.92rem;padding:8px 14px;border-radius:999px;cursor:pointer;min-height:44px}
+.tab[aria-selected="true"]{background:var(--y);border-color:var(--y);color:var(--y-ink);font-weight:700}
+.tab:focus-visible,.btn:focus-visible,input:focus-visible{outline:3px solid #1B6FD8;outline-offset:2px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 14px 4px;margin-top:10px}
+.card h2{font-size:1.05rem;margin:0 0 2px}
+.card .sub{margin:0 0 8px;color:var(--muted);font-size:.88rem}
+#fields h3{font-size:.95rem;margin:16px 0 6px;padding:2px 0 2px 10px;border-left:6px solid var(--y)}
+.fld{display:block;margin:0 0 12px;border:0;padding:0;min-width:0}
+.fld>span,.fld>legend{display:block;font-size:.88rem;font-weight:700;margin-bottom:3px;padding:0}
+.fld input[type=text],.fld input[type=tel],.fld input[type=date]{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:2px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);min-height:46px}
+.fld input:focus{border-color:var(--y)}
+.fld small{display:block;color:var(--muted);font-size:.8rem;margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chip span{display:block;border:2px solid var(--line);border-radius:8px;padding:9px 12px;background:var(--bg);font-size:.92rem;min-height:44px}
+.chip input:checked+span{background:var(--y-soft);border-color:var(--y);font-weight:700}
+.chip input:focus-visible+span{outline:3px solid #1B6FD8;outline-offset:2px}
+.todo{background:var(--y-soft);border-radius:8px;padding:10px 12px;margin:6px 0 12px;font-size:.9rem}
+.todo ul{margin:4px 0 0;padding-left:1.2em}
+.actions{position:sticky;bottom:0;background:linear-gradient(to top,var(--bg) 70%,transparent);padding:12px 0 calc(8px + env(safe-area-inset-bottom,0px));margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.btn{flex:1 1 220px;font:inherit;font-weight:700;font-size:1rem;border:0;border-radius:10px;padding:13px 16px;background:var(--y);color:var(--y-ink);cursor:pointer;min-height:50px;box-shadow:0 2px 0 rgba(0,0,0,.25)}
+.btn.sub{background:var(--surface);border:2px solid var(--line);color:var(--ink);box-shadow:none;flex:0 1 auto}
+.msg{font-size:.85rem;color:var(--muted);margin:4px 0 0;min-height:1.2em}
+.preview-title{margin:22px 0 6px;font-size:.95rem;font-weight:700}
+.sheet-frame{width:100%;overflow:hidden;background:#d8d4c0;border-radius:8px;padding:0;position:relative}
+.sheet{width:210mm;min-height:297mm;background:#fff;color:#000;padding:16mm 16mm 12mm;transform-origin:top left;font-family:var(--sheetfont),"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;font-size:10.5pt;line-height:1.6}
+.sheet .no{font-size:9pt}
+.sheet h2{font-size:15pt;text-align:center;margin:4mm 0 6mm;letter-spacing:.12em;line-height:1.5}
+.sheet p{margin:0}
+.sheet .r{text-align:right;margin:2mm 0}
+.sheet table.t{width:100%;border-collapse:collapse;table-layout:fixed}
+.sheet table.t th,.sheet table.t td{border:1px solid #000;padding:2.6mm 3mm;vertical-align:middle;text-align:left;font-weight:400;word-break:break-all}
+.sheet table.t th{background:#fff;text-align:center;font-size:9.5pt}
+.sheet .w1{width:27mm}.sheet .w2{width:30mm}
+.sheet .gray{background:#ddd}
+.sheet .circ{display:inline-block;border:1.2px solid #000;border-radius:50%;padding:0 1.5mm;line-height:1.5}
+.sheet .opt{display:inline-block;padding:0 1.5mm;line-height:1.5;border:1.2px solid transparent}
+.sheet .row2{display:flex;justify-content:space-between;gap:6mm;align-items:center}
+.sheet .cells{display:inline-flex}
+.sheet .cells i{display:inline-block;width:7mm;height:8.5mm;border:1px solid #000;border-left-width:0;text-align:center;font-style:normal;line-height:8.5mm;font-size:11pt}
+.sheet .cells i:first-child{border-left-width:1px}
+.sheet .small{font-size:9pt}
+.sheet .mt{margin-top:5mm}
+.sheet .box{border:1px solid #000;padding:3mm}
+.sheet .dense{font-size:9pt;line-height:1.45}
+.sheet .dense h2{font-size:13pt;margin:1mm 0 3mm}
+.sheet .dense table.t th,.sheet .dense table.t td{padding:1.3mm 2mm;font-size:8.5pt}
+.sheet .dense .mt{margin-top:2.5mm}
+.sheet .dense .cells i{width:6.4mm;height:6.5mm;line-height:6.5mm;font-size:10pt}
+.sheet .dense .r{margin:1mm 0}
+/* ===== 統合用 ===== */
+:root{
+  --surface:#FFFFFF; --muted:var(--ink-sub); --y:var(--yellow); --y-ink:#2A2112; --y-soft:var(--yellow-soft);
+  --warn-line:#E8A860;
+  --sheetfont:"BIZ UDPGothic","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+}
+.hero{padding-inline:0}
+.hero-in{padding-inline:16px}
+.asof{border-radius:12px}
+.modes{max-width:720px;margin:20px auto 0;padding-inline:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mode{font:inherit;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:18px;padding:12px 14px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:2px;min-height:72px;box-shadow:0 2px 0 rgba(42,33,18,.12)}
+.mode b{font-size:18px;font-weight:900;line-height:1.35}
+.mode small{font-size:13px;color:var(--ink-sub);line-height:1.4}
+.mode[aria-selected="true"]{background:var(--yellow);border-color:#2A2112}
+.mode[aria-selected="true"] small{color:#2A2112}
+.mode:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+#view-guide .nav{margin-top:14px}
+@media (min-width:700px){
+  .nav-in{gap:6px;padding-inline:16px}
+  .nav a{padding:6px 11px;font-size:13.5px}
+  .forms-wrap .tabs{flex-wrap:wrap;overflow:visible;margin:0;padding:4px 0 8px}
+}
+.forms-wrap .sheet-frame{padding:12px;background:#E9E3C6;box-sizing:border-box}
+.forms-wrap .sheet{box-shadow:0 1px 6px rgba(42,33,18,.25)}
+.forms-wrap{max-width:720px;margin:0 auto;padding:18px 16px 48px}
+.forms-wrap>h2{margin:6px 0 4px;font-size:24px;font-weight:900;border-left:8px solid var(--yellow);padding-left:12px;text-wrap:balance}
+.forms-wrap>.intro{margin:0 0 4px;color:var(--ink-sub);font-size:15.5px}
+.forms-wrap .card{border-radius:18px}
+.forms-wrap .fld input[type=text],.forms-wrap .fld input[type=tel],.forms-wrap .fld input[type=date]{background:var(--bg)}
+.links button.form{font:inherit;font-size:15px;font-weight:700;padding:12px 16px;min-height:48px;display:inline-flex;align-items:center;border-radius:999px;background:var(--yellow);color:#2A2112;border:2px solid #2A2112;cursor:pointer}
+.btn.sub.warn{background:var(--warn-bg);border-color:var(--warn-line);color:var(--warn-ink)}
+#imgOut{margin-top:14px;padding:14px;border:2px solid #2A2112;border-radius:16px;background:var(--card)}
+#imgOut p{margin:0 0 10px;font-size:15px}
+#imgOut img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.foot{margin-top:24px;color:var(--ink-sub);font-size:13.5px}
+
+
+@media print{
+  @page{size:A4;margin:0}
+  html,body{background:#fff!important}
+  .noprint,#view-guide{display:none!important}
+  #view-forms{display:block!important}
+  .forms-wrap{padding:0;max-width:none}
+  .sheet-frame{background:none;border-radius:0;height:auto!important;overflow:visible}
+  .sheet{transform:none!important;height:auto;min-height:296mm;overflow:visible;margin:0}
+  :root{padding:0}
+}
+</style>
+
+
+
+<header class="hero noprint">
+  <div class="hero-in">
+    <div class="hero-top"><svg viewBox="0 0 64 64" role="img" aria-label="ひよこ"><path d="M30 12c-1-5 2-8 5-8 0 3-1 5-3 8z" fill="#FFC400" stroke="#2A2112" stroke-width="2.4" stroke-linejoin="round"/><circle cx="32" cy="36" r="22" fill="#FFC400" stroke="#2A2112" stroke-width="2.6"/><circle cx="24" cy="32" r="2.8" fill="#2A2112"/><circle cx="40" cy="32" r="2.8" fill="#2A2112"/><circle cx="20" cy="39" r="3.6" fill="#FF9E8F" opacity=".7"/><circle cx="44" cy="39" r="3.6" fill="#FF9E8F" opacity=".7"/><path d="M28 37h8l-4 6z" fill="#F08A24" stroke="#2A2112" stroke-width="1.8" stroke-linejoin="round"/><path d="M26 58v4M38 58v4" stroke="#2A2112" stroke-width="2.4" stroke-linecap="round"/></svg><small>台東区の妊娠・出産・子育てガイド</small></div>
+    <h1>いつ、どこへ行けば、<br>何が受けられる？</h1>
+    <p>赤ちゃんが生まれる前から3歳ごろまで。台東区の支援を時期ごとにまとめ、手続きの書類もスマホでつくれるようにしました。</p>
+    <span class="asof">区の公式ページをもとにしたまとめ（2026年10月7日に確認）</span>
+  </div>
+</header>
+
+<nav class="modes noprint" id="modes" aria-label="使い方を選ぶ">
+  <a class="mode" href="../"><b>支援をさがす</b><small>時期・困りごとから</small></a>
+  <a class="mode" href="./" aria-current="page"><b>書類をつくる</b><small>医療証・手当など6種類</small></a>
+</nav>
+<main class="forms-wrap" id="view-forms">
+  <h2>手続きの書類をつくる</h2>
+  <p class="intro">スマホで入力すると、子育て支援課に出す書類ができあがります。6種類の用紙に対応しています。</p>
+
+  
+
+  <div class="notice noprint">
+    <b>はじめに読んでください</b>
+    台東区の公式サイトではありません。区の公開している様式をもとに、項目を再現した書類です。提出する前に、子育て支援課 給付担当（03-5246-1232）へ、この書式で受け付けてもらえるか確認してください。入力した内容はこの端末の中だけで処理され、送信も保存もしません。
+  </div>
+
+  <div class="tabs noprint" role="tablist" id="tabs"></div>
+
+  <section class="card noprint" id="card">
+    <h2 id="ftitle"></h2>
+    <p class="sub" id="fsub"></p>
+    <div class="todo" id="todo"></div>
+    <div id="fields"></div>
+  </section>
+
+  <div class="actions noprint">
+    <button class="btn" id="printBtn" type="button">画像にする（保存用）</button>
+    <button class="btn sub" id="clearBtn" type="button">入力を消す</button>
+  </div>
+  <p class="msg noprint" id="msg" role="status">「画像にする」を押すと、下に書類の画像が出ます。長押し（PCは右クリック）で保存して、コンビニのネットプリントなどで印刷できます。</p>
+  <div id="imgOut" hidden></div>
+
+  <p class="preview-title noprint">プレビュー（このまま出力されます）</p>
+  <div class="sheet-frame" id="frame"><div class="sheet" id="sheet"></div></div>
+
+  <p class="foot noprint">区の様式は改訂されることがあります。最新の様式は <a href="https://www.city.taito.lg.jp/benri/download/kosodateshien/index.html" target="_blank" rel="noopener">台東区「子育て支援課の申請書ダウンロード」</a> で確認できます。</p>
+</main>
+<footer class="noprint">
+  <div class="in">
+    <p>このページは、台東区の公式ホームページ「こんにちは 赤ちゃん」と、そこからたどれる各ページの内容をもとにした、個人によるまとめです。台東区が作ったものではありません。</p>
+    <p>書類づくりのページは、区が公開している様式をもとに項目を再現したものです。提出前に、子育て支援課 給付担当（03-5246-1232）へこの書式で受け付けてもらえるか確認してください。</p>
+    <p>金額・日程・条件は変わることがあります。申し込む前に、必ず各項目の「区のページ」か窓口で最新の内容を確認してください。</p>
+    <p>出典：<a href="https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/shussan/akatyankosodateinfo.html">台東区ホームページ（こんにちは 赤ちゃん～赤ちゃんが生まれた方へ～）</a></p>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+(function(){
+  var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+  function pad(n){return String(n).padStart(2,'0')}
+  function today(){var d=new Date();return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+  function era(iso){
+    if(!iso)return null;
+    var p=iso.split('-').map(Number),Y=p[0],M=p[1],D=p[2],t=Y*10000+M*100+D,e,y;
+    if(t>=20190501){e='令和';y=Y-2018}else if(t>=19890108){e='平成';y=Y-1988}else if(t>=19261225){e='昭和';y=Y-1925}else{e='大正';y=Y-1911}
+    return {e:e,y:y===1?'元':y,m:M,d:D};
+  }
+  function jd(iso){var o=era(iso);return o?o.e+o.y+'年'+o.m+'月'+o.d+'日':'令和　　年　　月　　日'}
+  function jdBirth(iso){var o=era(iso);return o?o.e+o.y+'年'+o.m+'月'+o.d+'日　生':'　　　　年　　月　　日　生'}
+  function kata(s){return String(s||'').normalize('NFKC').replace(/[ぁ-ゖ]/g,function(c){return String.fromCharCode(c.charCodeAt(0)+0x60)})}
+  function kanaCells(s){
+    var t=kata(s).normalize('NFD').replace(/\u3099/g,'゛').replace(/\u309A/g,'゜').replace(/[\s\u3000]+/g,' ');
+    return Array.from(t);
+  }
+  function mark(label,sel){return '<span class="'+(sel?'circ':'opt')+'">'+esc(label)+'</span>'}
+  function cells(arr,n,right){
+    var a=arr.slice(0,n),fill=[],i;
+    for(i=0;i<n-a.length;i++)fill.push('');
+    var all=right?fill.concat(a):a.concat(fill);
+    return '<span class="cells">'+all.map(function(c){return '<i>'+esc(c)+'</i>'}).join('')+'</span>';
+  }
+  function has(arr,v){return Array.isArray(arr)&&arr.indexOf(v)>=0}
+
+  var FORMS={
+    reissue:{
+      tab:'医療証の再交付',
+      title:'子ども医療費助成　医療証再交付申請書',
+      sub:'医療証をなくした・汚した・破った時の申請書です。',
+      todo:['書いたら印刷（PDF）して、郵送でご提出ください。','医療証が手元にあれば同封します。'],
+      fields:[
+        {t:'date',k:'date',l:'書いた日',def:1},
+        {t:'group',l:'保護者（医療証の名義の方）'},
+        {t:'text',k:'addr',l:'住所（「台東区」のあと）',ph:'例：東上野4丁目5番6号'},
+        {t:'text',k:'name',l:'氏名'},
+        {t:'tel',k:'tel',l:'電話番号',ph:'例：03-1234-5678'},
+        {t:'group',l:'医療証'},
+        {t:'radio',k:'kind',l:'種類',o:['乳幼児医療証','子ども医療証','高校生等医療証']},
+        {t:'text',k:'futan',l:'負担者番号',h:'医療証に書いてあります。分からなければ空欄でも大丈夫です。'},
+        {t:'text',k:'jukyu',l:'受給者番号'},
+        {t:'group',l:'お子さま'},
+        {t:'text',k:'kana',l:'フリガナ',ph:'例：タイトウ ハナ'},
+        {t:'text',k:'cname',l:'氏名'},
+        {t:'radio',k:'sex',l:'性別',o:['男','女']},
+        {t:'date',k:'birth',l:'生年月日'},
+        {t:'group',l:'再交付の理由'},
+        {t:'radio',k:'reason',l:'理由',o:['なくした','汚した・破った','その他']},
+        {t:'text',k:'other',l:'「その他」の内容',h:'「その他」を選んだ時だけ書きます。'},
+        {t:'radio',k:'attach',l:'医療証の添付',o:['あり','なし']}
+      ],
+      sheet:function(s){
+        return ''
+        +'<div class="no">第４号様式（第１０条関係）</div>'
+        +'<h2>台東区子ども医療費助成<br>医療証再交付申請書</h2>'
+        +'<p class="r">'+esc(jd(s.date))+'</p>'
+        +'<p>台 東 区 長 　殿</p>'
+        +'<table class="t" style="margin-top:6mm">'
+        +'<tr><th rowspan="3" class="w1">保護者等<br>（医療証名義）</th><th class="w2">住所</th><td>台東区 '+esc(s.addr)+'</td></tr>'
+        +'<tr><th>氏名</th><td>'+esc(s.name)+'</td></tr>'
+        +'<tr><th>電話番号</th><td>'+esc(s.tel)+'</td></tr></table>'
+        +'<p style="margin:6mm 0 2mm">次の理由により、医療証の再交付を申請します。</p>'
+        +'<table class="t">'
+        +'<tr><th rowspan="3" class="w1">医療証</th><th class="w2">種類</th><td>'+['乳幼児医療証','子ども医療証','高校生等医療証'].map(function(o){return mark(o,s.kind===o)}).join(' ')+'</td></tr>'
+        +'<tr><th>負担者番号</th><td>'+esc(s.futan)+'</td></tr>'
+        +'<tr><th>受給者番号</th><td>'+esc(s.jukyu)+'</td></tr>'
+        +'<tr><th rowspan="3" class="w1">子ども</th><th>フリガナ</th><td>'+esc(kata(s.kana))+'</td></tr>'
+        +'<tr><th>氏名</th><td><div class="row2"><span>'+esc(s.cname)+'</span><span>'+mark('男',s.sex==='男')+' ・ '+mark('女',s.sex==='女')+'</span></div></td></tr>'
+        +'<tr><th>生年月日</th><td>'+esc(jdBirth(s.birth))+'</td></tr>'
+        +'<tr><th class="w1">申請理由</th><td colspan="2" style="line-height:2.1">'
+        +mark('１　なくした',s.reason==='なくした')+'<br>'
+        +mark('２　汚した・破った',s.reason==='汚した・破った')+'<br>'
+        +mark('３　その他（具体的に記入）',s.reason==='その他')+'　（ '+esc(s.reason==='その他'?s.other:'')+' ）<br>'
+        +'<span class="small">（医療証の添付　'+mark('あり',s.attach==='あり')+'　'+mark('なし',s.attach==='なし')+'）</span>'
+        +'</td></tr></table>'
+        +'<table class="t mt"><tr><th class="w1 gray">処理欄</th><td class="gray">医療証再交付年月日　　　　・　　　　・</td></tr></table>';
+      }
+    },
+    change:{
+      tab:'変更・資格消滅の届出',
+      title:'申請事項変更届兼受給資格消滅届',
+      sub:'氏名・住所・加入健康保険が変わった時、または転出などで受給資格がなくなる時の届出です。',
+      todo:['健康保険が変わった場合は、変更後の加入状況が分かるもの（保険証・資格確認書・資格情報のお知らせのコピー等）を同封します。','書いたら印刷（PDF）して、郵送でご提出ください。'],
+      fields:[
+        {t:'date',k:'date',l:'書いた日',def:1},
+        {t:'radio',k:'kind',l:'どちらの届出ですか',o:['申請事項を変更','受給資格が消滅']},
+        {t:'group',l:'医療証'},
+        {t:'text',k:'futan',l:'負担者番号'},
+        {t:'text',k:'jukyu',l:'受給者番号'},
+        {t:'group',l:'お子さま（医療証の記載どおり）'},
+        {t:'text',k:'c1name',l:'お子さま1人目の氏名'},
+        {t:'date',k:'c1birth',l:'1人目の生年月日'},
+        {t:'text',k:'c2name',l:'お子さま2人目の氏名（いる場合）'},
+        {t:'date',k:'c2birth',l:'2人目の生年月日'},
+        {t:'text',k:'pname',l:'保護者等の氏名（医療証の記載どおり）'},
+        {t:'group',l:'変更の場合'},
+        {t:'check',k:'chg',l:'変更する事項（当てはまるものすべて）',o:['氏名変更（保護者等・子ども）','住所変更','加入健康保険変更','その他']},
+        {t:'date',k:'chgdate',l:'変更した日'},
+        {t:'text',k:'before',l:'変更前',ph:'例：国民健康保険'},
+        {t:'text',k:'after',l:'変更後',ph:'例：○○健康保険組合'},
+        {t:'group',l:'受給資格がなくなる場合'},
+        {t:'radio',k:'van',l:'理由',o:['他の市区町村に転出','生活保護受給','保護者等変更','その他']},
+        {t:'text',k:'vanother',l:'「その他」の内容'},
+        {t:'date',k:'vandate',l:'なくなった日'},
+        {t:'text',k:'moveaddr',l:'転出先の住所'},
+        {t:'tel',k:'tel',l:'連絡先の電話番号'}
+      ],
+      sheet:function(s){
+        var chgOpts=['氏名変更（保護者等・子ども）','住所変更','加入健康保険変更','その他'];
+        var nums=['１','２','３','４'];
+        var vanOpts=['他の市区町村に転出','生活保護受給','保護者等変更','その他'];
+        return ''
+        +'<div class="no">第８号様式（第１３条関係）</div>'
+        +'<h2>台東区子ども医療費助成<br>申請事項変更届兼受給資格消滅届</h2>'
+        +'<p class="r">'+esc(jd(s.date))+'</p>'
+        +'<p>台 東 区 長 　殿</p>'
+        +'<p style="margin:5mm 0 3mm">上記のとおり、子ども医療費助成制度の　'+mark('申請事項を変更',s.kind==='申請事項を変更')+'　・　'+mark('受給資格が消滅',s.kind==='受給資格が消滅')+'　しましたので届け出ます。</p>'
+        +'<table class="t">'
+        +'<tr><th rowspan="2" class="w1">医療証</th><th class="w2">負担者番号</th><td>'+esc(s.futan)+'</td></tr>'
+        +'<tr><th>受給者番号</th><td>'+esc(s.jukyu)+'</td></tr>'
+        +'<tr><th rowspan="4" class="w1">子ども</th><th class="w2">氏名</th><td>'+esc(s.c1name)+'</td></tr>'
+        +'<tr><th>生年月日</th><td>'+esc(jdBirth(s.c1birth))+'</td></tr>'
+        +'<tr><th>氏名</th><td>'+esc(s.c2name)+'</td></tr>'
+        +'<tr><th>生年月日</th><td>'+esc(s.c2name||s.c2birth?jdBirth(s.c2birth):'　　　　年　　月　　日　生')+'</td></tr>'
+        +'<tr><th class="w1">保護者等<br><span class="small">（医療証記載）</span></th><th>氏名</th><td>'+esc(s.pname)+'</td></tr></table>'
+        +'<table class="t mt">'
+        +'<tr><th rowspan="3" class="w1">変更の<br>場合</th><th class="w2">変更事項</th><td style="line-height:2">'
+        +chgOpts.map(function(o,i){return mark(nums[i]+'　'+o,has(s.chg,o))}).join('　')+'</td></tr>'
+        +'<tr><th>変更年月日</th><td>'+esc(jd(s.chgdate))+'</td></tr>'
+        +'<tr><th>変更内容</th><td><div class="row2" style="align-items:flex-start"><span style="flex:1"><span class="small">変更前</span><br>'+esc(s.before)+'</span><span style="flex:1"><span class="small">変更後</span><br>'+esc(s.after)+'</span></div></td></tr>'
+        +'<tr><th rowspan="4" class="w1">消滅の<br>場合</th><th>消滅理由</th><td style="line-height:2">'
+        +vanOpts.map(function(o,i){return mark(nums[i]+'　'+o+(i===3&&s.van===o&&s.vanother?'（'+s.vanother+'）':''),s.van===o)}).join('<br>')+'</td></tr>'
+        +'<tr><th>消滅年月日</th><td>'+esc(jd(s.vandate))+'</td></tr>'
+        +'<tr><th>転出先住所</th><td>'+esc(s.moveaddr)+'</td></tr>'
+        +'<tr><th>電話番号</th><td>'+esc(s.tel)+'</td></tr></table>'
+        +'<table class="t mt"><tr><th class="w1 gray">処理欄</th><td class="gray small">受付（郵便・窓口）／医療証発行・回収／担当入力・チェック</td></tr></table>';
+      }
+    },
+    bank:{
+      tab:'手当の口座変更',
+      title:'児童手当・児童扶養手当・児童育成手当 口座振替依頼書・変更届',
+      sub:'手当の振込先の口座を変える時の届出です。',
+      todo:['身分証明書を必ず添付してください。','口座は手当を受け取る方（申請者）本人の名義に限ります。お子さんの口座は登録できません。','書いたら印刷（PDF）して、郵送でご提出ください。'],
+      fields:[
+        {t:'date',k:'date',l:'書いた日',def:1},
+        {t:'group',l:'手当を受け取る方（申請者）'},
+        {t:'text',k:'addr',l:'住所（「台東区」のあと）',ph:'例：東上野4丁目5番6号'},
+        {t:'text',k:'name',l:'氏名'},
+        {t:'group',l:'振込先の口座'},
+        {t:'text',k:'bank',l:'金融機関の名前',ph:'例：○○'},
+        {t:'radio',k:'banktype',l:'金融機関の種類',o:['銀行','信用金庫','信用組合']},
+        {t:'text',k:'branch',l:'支店の名前',ph:'例：上野'},
+        {t:'radio',k:'dtype',l:'預金の種類',o:['普通（総合）','当座']},
+        {t:'tel',k:'tenban',l:'店番号（3けた）',max:3,h:'通帳やアプリで確認できます。'},
+        {t:'tel',k:'acct',l:'口座番号（7けた）',max:7},
+        {t:'text',k:'holder',l:'口座名義（カナ・20文字まで）',max:20,ph:'例：タイトウ タロウ',h:'ひらがなで入力してもカタカナに直します。名字と名前のあいだは1マス空きます。'}
+      ],
+      sheet:function(s){
+        var holder=kanaCells(s.holder);
+        var acct=Array.from(String(s.acct||'').replace(/[^0-9０-９]/g,'').normalize('NFKC'));
+        var ten=Array.from(String(s.tenban||'').replace(/[^0-9０-９]/g,'').normalize('NFKC'));
+        return ''
+        +'<h2 style="font-size:13pt;letter-spacing:.04em">児童手当（特例給付）・児童扶養手当・児童育成手当<br>口座振替依頼書・変更届</h2>'
+        +'<table class="t">'
+        +'<tr><th rowspan="5" class="w1">振込先<br>金融機関</th><th class="w2">金融機関名</th><td>'+esc(s.bank)+'　'+['銀行','信用金庫','信用組合'].map(function(o){return mark(o,s.banktype===o)}).join(' ')+'</td></tr>'
+        +'<tr><th>支店名</th><td>'+esc(s.branch)+' 支店</td></tr>'
+        +'<tr><th>預金種別</th><td>'+mark('１　普通（総合）',s.dtype==='普通（総合）')+'　　'+mark('２　当座',s.dtype==='当座')+'</td></tr>'
+        +'<tr><th>店番号</th><td>'+cells(ten,3,false)+'</td></tr>'
+        +'<tr><th>口座番号<br><span class="small">（右詰め）</span></th><td>'+cells(acct,7,true)+'</td></tr>'
+        +'<tr><th class="w1">口座名義<br><span class="small">（カナ）</span></th><td colspan="2" style="padding:3mm 2mm">'+cells(holder,20,false)+'<div class="small" style="margin-top:1.5mm">※スペースは１マスあけ、濁点・半濁点も１字です。受給者（申請者）名義に限ります。</div></td></tr>'
+        +'<tr><th class="w1 gray">認定番号</th><td colspan="2" class="gray small">（記入しないでください）</td></tr></table>'
+        +'<p class="mt" style="line-height:1.9">台東区から私に支給される児童手当（特例給付）・児童扶養手当・児童育成手当は、上記の口座に口座振替の方法をもって振り込んでください。</p>'
+        +'<p class="r" style="margin-top:6mm">'+esc(jd(s.date))+'</p>'
+        +'<p>東京都台東区長 　殿</p>'
+        +'<table class="t mt"><tr><th class="w1">手当の<br>受給者<br>（申請者）</th><th class="w2">住所</th><td>台東区 '+esc(s.addr)+'</td></tr>'
+        +'<tr><th class="w1"></th><th>氏名</th><td style="height:14mm">'+esc(s.name)+'</td></tr></table>'
+        +'<p class="small mt">（ご注意）預金種別は該当のものに○がつきます。灰色の部分は記入しないでください。</p>';
+      }
+    }
+  };
+
+  function jdS(iso){var o=era(iso);return o?o.e+o.y+'年'+o.m+'月'+o.d+'日':'　　　年　月　日'}
+  function digits(v){return Array.from(String(v||'').replace(/[^0-9０-９]/g,'').normalize('NFKC'))}
+  function gt(groups){
+    var h='<table class="t mt">';
+    groups.forEach(function(g){g[1].forEach(function(r,i){
+      h+='<tr>'+(i===0?'<th rowspan="'+g[1].length+'" class="w1">'+g[0]+'</th>':'')+'<th class="w2">'+r[0]+'</th><td>'+r[1]+'</td></tr>';
+    })});
+    return h+'</table>';
+  }
+  function gt2(rows){
+    return '<table class="t">'+rows.map(function(r){return '<tr><th class="w2">'+r[0]+'</th><td>'+r[1]+'</td></tr>'}).join('')+'</table>';
+  }
+  function hospFields(types){
+    var f=[];
+    for(var i=1;i<=4;i++){
+      f.push({t:'group',l:'受診した病院 '+i,hosp:i});
+      f.push({t:'text',k:'h'+i+'name',l:'病院などの名前',hosp:i});
+      f.push({t:'date',k:'h'+i+'from',l:'診療期間：いちばん早い日',h:'この病院にかかった一番早い日',hosp:i});
+      f.push({t:'date',k:'h'+i+'to',l:'診療期間：さいごの日',h:'この病院にかかった最後の日',hosp:i});
+      f.push({t:'radio',k:'h'+i+'place',l:'区分',o:['外来','入院','食事代'],hosp:i});
+      f.push({t:'tel',k:'h'+i+'n',l:'領収書の枚数',max:2,hosp:i});
+      f.push({t:'check',k:'h'+i+'types',l:'申請の種類（当てはまるものすべて）',o:types,hosp:i});
+    }
+    f.push({t:'addhosp'});
+    return f;
+  }
+  function bankFieldList(){
+    return [
+      {t:'group',l:'振込先の口座'},
+      {t:'text',k:'bank',l:'金融機関の名前'},
+      {t:'radio',k:'banktype',l:'金融機関の種類',o:['銀行','信用金庫','信用組合']},
+      {t:'text',k:'branch',l:'支店の名前'},
+      {t:'tel',k:'tenban',l:'店番号（3けた）',max:3},
+      {t:'radio',k:'dtype',l:'預金の種類',o:['普通','当座']},
+      {t:'tel',k:'acct',l:'口座番号（7けた）',max:7},
+      {t:'text',k:'holder',l:'口座名義人（カナ・20文字まで）',max:20,ph:'例：タイトウ タロウ',h:'ひらがなで入力してもカタカナに直します。'}
+    ];
+  }
+  var KIDS_TYPES=['一般','歯科','薬剤','看護','移送','補装具','食事代','その他'];
+  var OYA_TYPES=['一般','歯科','薬剤','看護','移送','補装具','その他'];
+
+  function refundSheet(s,oya){
+    var n=s.hcount||1,tp=oya?OYA_TYPES:KIDS_TYPES,rows='',i;
+    for(i=1;i<=n;i++){
+      rows+='<tr><td>'+esc(s['h'+i+'name'])+'</td>'
+        +'<td class="small">自 '+esc(jdS(s['h'+i+'from']))+'<br>至 '+esc(jdS(s['h'+i+'to']))+'</td>'
+        +'<td>'+['外来','入院','食事代'].map(function(o){return mark(o,s['h'+i+'place']===o)}).join('<br>')+'</td>'
+        +'<td>'+esc(s['h'+i+'n'])+' 枚</td>'
+        +'<td class="small">'+tp.map(function(o,j){return mark((j+1)+' '+o,has(s['h'+i+'types'],o))}).join(' ')+'</td>'
+        +'<td class="gray"></td></tr>';
+    }
+    var hosp='<table class="t mt" style="table-layout:fixed"><colgroup><col style="width:25%"><col style="width:24%"><col style="width:9%"><col style="width:9%"><col style="width:23%"><col style="width:10%"></colgroup>'
+      +'<tr><th>病院等の名称</th><th>診療期間</th><th>区分</th><th>領収書<br>枚数</th><th>申請の種類</th><th class="gray small">医療費の内訳<br>（区職員が記入）</th></tr>'+rows+'</table>';
+    var groups=[['医療証',[['負担者番号',esc(s.futan)],['受給者番号',esc(s.jukyu)]]]];
+    if(oya){
+      groups.push(['診療を<br>受けた方',[['氏名',esc(s.cname)],['生年月日',esc(jdBirth(s.cbirth))],['資格取得年月日',esc(jdS(s.sdate))]]]);
+      groups.push(['加入保険<br>の状況',[['保険者名称',esc(s.instName)],['保険者番号',esc(s.instNo)],['被保険者証等<br>記号・番号（枝番）',esc(s.cardNo)],['被保険者氏名',esc(s.insured)]]]);
+    }else{
+      groups.push(['子ども',[['氏名',esc(s.cname)],['資格取得<br>年月日',esc(jdS(s.sdate))+'　（'+['生','認','子認','転入','その他'].map(function(o){return mark(o,s.skind===o)}).join('・')+'）']]]);
+      groups.push(['加入保険<br>の状況',[['保険の種類',['全国健康保険協会','国保','国民健康保険組合','健康保険組合','共済組合'].map(function(o){return mark(o,s.insType===o)}).join(' ')],['保険者名称',esc(s.instName)],['保険者番号',esc(s.instNo)],['被保険者証等<br>記号・番号',esc(s.cardNo)],['被保険者氏名',esc(s.insured)]]]);
+    }
+    var other=s.reason==='その他'?esc(s.other):'';
+    var reason='<table class="t mt"><tr><th class="w1">申請の理由</th><td style="line-height:1.9">'
+      +mark('１　医療証発行前の受診',s.reason==='医療証発行前の受診')+'　　'+mark('２　都外受診',s.reason==='都外受診')+'<br>'
+      +mark('３　医療証を取り扱っていなかった',s.reason==='医療証を取り扱っていなかった')+'　　'
+      +mark('４　その他'+(oya?'':'（食事代・補装具など）'),s.reason==='その他')+'（ '+other+' ）</td></tr></table>';
+    var bank='<p class="small mt"><b>振込先金融機関</b>（'+(oya?'申請者':'医療証記載の保護者')+'名義）</p>'
+      +gt2([
+        ['金融機関名',esc(s.bank)+'　'+['銀行','信用金庫','信用組合'].map(function(o){return mark(o,s.banktype===o)}).join(' ')],
+        ['支店名',esc(s.branch)+' 支店　（店番号 '+esc(digits(s.tenban).join(''))+'）　'+mark('１ 普通',s.dtype==='普通')+'　'+mark('２ 当座',s.dtype==='当座')],
+        ['口座番号',cells(digits(s.acct),7,true)],
+        ['口座名義人<br>（カナシメイ）',cells(kanaCells(s.holder),20,false)]
+      ]);
+    var applicant='<table class="t mt"><tr><th rowspan="3" class="w1">申請者'+(oya?'':'<br><span class="small">（医療証記載の<br>保護者等）</span>')+'</th><th class="w2">住所</th><td>台東区 '+esc(s.addr)+'</td></tr>'
+      +'<tr><th>氏名</th><td><div class="row2"><span>'+esc(s.name)+'</span><span>㊞</span></div></td></tr>'
+      +'<tr><th>電話番号</th><td>'+esc(s.tel)+'</td></tr></table>';
+    return '<div class="dense">'
+      +'<div class="no">'+(oya?'第６号様式（第２０条関係）':'第５号様式（第１２条関係）')+'</div>'
+      +'<h2>'+(oya?'ひとり親家庭等<br>医療助成費支給申請書':'台東区子ども医療費助成<br>医療助成費支給申請書')+'</h2>'
+      +'<p class="small" style="text-align:center;margin:-2mm 0 2mm">（領収書の原本を添付してください）</p>'
+      +gt(groups)+hosp+reason+bank
+      +'<p class="mt">上記のとおり、医療助成費の支給を申請します。</p>'
+      +'<p class="r">'+esc(jd(s.date))+'</p>'
+      +'<p>台 東 区 長 　殿</p>'
+      +applicant
+      +'<div class="row2 small mt"><span>※㊞は朱肉で押す印鑑でお願いします。</span><span class="box" style="padding:1mm 4mm">捨印　㊞</span></div>'
+      +'<table class="t mt"><tr><th class="w1 gray">処理欄</th><td class="gray small">支給決定額　　　　　　　　　円</td></tr></table>'
+      +'</div>';
+  }
+  function refundFields(oya){
+    var f=[
+      {t:'date',k:'date',l:'書いた日',def:1},
+      {t:'group',l:oya?'申請者（医療証の表面に書いてある方）':'申請者（医療証に書いてある保護者等）'},
+      {t:'text',k:'addr',l:'住所（「台東区」のあと）',ph:'例：東上野4丁目5番6号'},
+      {t:'text',k:'name',l:'氏名',h:oya?'':'振込先の口座の名義人と同じ方にします。'},
+      {t:'tel',k:'tel',l:'電話番号'},
+      {t:'group',l:'医療証'},
+      {t:'text',k:'futan',l:'負担者番号'},
+      {t:'text',k:'jukyu',l:'受給者番号'}
+    ];
+    if(oya){
+      f.push({t:'group',l:'診療を受けた方'});
+      f.push({t:'text',k:'cname',l:'氏名'});
+      f.push({t:'date',k:'cbirth',l:'生年月日'});
+      f.push({t:'date',k:'sdate',l:'資格取得年月日',h:'保険証に書いてあります。'});
+      f.push({t:'group',l:'加入している健康保険'});
+    }else{
+      f.push({t:'group',l:'お子さま'});
+      f.push({t:'text',k:'cname',l:'氏名',h:'お子さんごとに1枚書きます。'});
+      f.push({t:'date',k:'sdate',l:'子どもの資格取得年月日',h:'分からなければ空欄でも大丈夫です。'});
+      f.push({t:'radio',k:'skind',l:'資格取得の種類',o:['生','認','子認','転入','その他']});
+      f.push({t:'group',l:'加入している健康保険'});
+      f.push({t:'radio',k:'insType',l:'保険の種類',o:['全国健康保険協会','国保','国民健康保険組合','健康保険組合','共済組合']});
+    }
+    f.push({t:'text',k:'instName',l:'保険者名称'});
+    f.push({t:'tel',k:'instNo',l:'保険者番号',max:8});
+    f.push({t:'text',k:'cardNo',l:oya?'被保険者証などの記号・番号（枝番）':'被保険者証などの記号・番号'});
+    f.push({t:'text',k:'insured',l:'被保険者氏名',h:'保険証に名前がのっている方です。'});
+    f=f.concat(hospFields(oya?OYA_TYPES:KIDS_TYPES));
+    f.push({t:'group',l:'申請の理由'});
+    f.push({t:'radio',k:'reason',l:'理由',o:['医療証発行前の受診','都外受診','医療証を取り扱っていなかった','その他']});
+    f.push({t:'text',k:'other',l:'「その他」の内容'});
+    return f.concat(bankFieldList());
+  }
+
+  FORMS.hreissue={
+    tab:'医療証の再交付（ひとり親）',
+    title:'ひとり親家庭等医療費助成　医療証再交付申請書',
+    sub:'医療証をなくした・汚した・届かなかった時の申請書です。',
+    todo:['書いたら印刷（PDF）して、郵送でご提出ください。'],
+    fields:[
+      {t:'date',k:'date',l:'書いた日',def:1},
+      {t:'text',k:'addr',l:'住所（「台東区」のあと）',ph:'例：東上野4丁目5番6号'},
+      {t:'text',k:'name',l:'氏名'},
+      {t:'group',l:'医療証'},
+      {t:'text',k:'futan',l:'負担者番号',defv:'81130',h:'用紙には「81130」と印刷されています。続きの数字を足してください。'},
+      {t:'text',k:'jukyu',l:'受給者番号'},
+      {t:'date',k:'issued',l:'医療証をもらった日',h:'分からなければ空欄でも大丈夫です。'},
+      {t:'group',l:'再交付の理由'},
+      {t:'radio',k:'reason',l:'理由',o:['なくした','汚した','郵送未到着','その他']},
+      {t:'text',k:'other',l:'「その他」の内容（具体的に）'}
+    ],
+    sheet:function(s){
+      var rs=['なくした','汚した','郵送未到着','その他'],nm=['１','２','３','４'];
+      return '<div class="no">第５号様式（第１７条関係）</div>'
+      +'<h2>ひとり親家庭等医療費助成制度<br>医療証再交付申請書</h2>'
+      +'<p class="r">'+esc(jd(s.date))+'</p>'
+      +'<p>台 東 区 長 　殿</p>'
+      +'<table class="t" style="margin-top:6mm"><tr><th class="w2">住所</th><td>台東区 '+esc(s.addr)+'</td></tr><tr><th>氏名</th><td>'+esc(s.name)+'</td></tr></table>'
+      +'<p style="margin:6mm 0 2mm">次の理由により、ひとり親家庭等医療費助成制度の医療証の再交付を申請します。</p>'
+      +'<table class="t"><tr><th rowspan="3" class="w1">医療証<br>番号</th><th class="w2">負担者番号</th><td>'+esc(s.futan)+'</td></tr>'
+      +'<tr><th>受給者番号</th><td>'+esc(s.jukyu)+'</td></tr>'
+      +'<tr><th>医療証交付<br>年月日</th><td>'+esc(jdS(s.issued))+'</td></tr>'
+      +'<tr><th class="w1">申請理由</th><td colspan="2" style="line-height:2.1">'
+      +rs.map(function(o,i){return mark(nm[i]+'　'+o+(o==='その他'?'（具体的に）　'+(s.reason==='その他'?esc(s.other):''):''),s.reason===o)}).join('<br>')
+      +'</td></tr></table>'
+      +'<table class="t mt"><tr><th class="w1 gray">処理欄</th><td class="gray small">医療証回収　有・無　／　再交付年月日　　／　　／　　窓口・郵送</td></tr></table>';
+    }
+  };
+  FORMS.refund={
+    tab:'医療費の払い戻し（子ども）',
+    title:'子ども医療費助成　医療助成費支給申請書',
+    sub:'都外の病院や、医療証が使えなかった病院で受診した時の払い戻しの申請書です。',
+    todo:[
+      '領収書の原本を添付してください。',
+      '病院ごとに書きます。医療費の内訳は書かないでください（区の職員が書きます）。',
+      '印刷してから、朱肉で押す印鑑を2か所（氏名のところと捨印）に押します。',
+      '保護者の氏名は、振込先の口座の名義人と同じ方にします。',
+      '健康保険が変わった時は、保険証・資格確認書・資格情報のお知らせのコピー等も同封します。',
+      '振り込みは、申請から2か月ほどかかります。'
+    ],
+    fields:refundFields(false),
+    sheet:function(s){return refundSheet(s,false)}
+  };
+  FORMS.hrefund={
+    tab:'医療費の払い戻し（ひとり親）',
+    title:'ひとり親家庭等医療助成費支給申請書',
+    sub:'都外の病院や、医療証が使えなかった病院で受診した時の払い戻しの申請書です。',
+    todo:[
+      '領収書の原本を添付してください。',
+      '病院ごとに書きます。医療費の内訳は書かないでください（区の職員が書きます）。',
+      '印刷してから、朱肉で押す印鑑（スタンプ印は使えません）を2か所（氏名のところと捨印）に押します。',
+      '口座は、医療証の表面に書いてある申請者の名義にします。',
+      '振り込みは、申請から2か月ほどかかります。'
+    ],
+    fields:refundFields(true),
+    sheet:function(s){return refundSheet(s,true)}
+  };
+
+  var order=['reissue','hreissue','change','bank','refund','hrefund'];
+  var cur='reissue';
+  var S={};
+  function initState(id){
+    S[id]={hcount:1};
+    FORMS[id].fields.forEach(function(f){
+      if(f.def)S[id][f.k]=today();
+      if(f.defv!=null)S[id][f.k]=f.defv;
+      if(f.t==='check')S[id][f.k]=[];
+    });
+  }
+  order.forEach(initState);
+
+  var $=function(s){return document.querySelector(s)};
+
+  function buildTabs(){
+    $('#tabs').innerHTML=order.map(function(id){
+      return '<button class="tab" role="tab" type="button" data-id="'+id+'" aria-selected="'+(id===cur)+'">'+esc(FORMS[id].tab)+'</button>';
+    }).join('');
+  }
+  function fieldHTML(f){
+    if(f.hosp&&f.hosp>(S[cur].hcount||1))return '';
+    if(f.t==='addhosp'){
+      return (S[cur].hcount||1)<4?'<button type="button" class="btn sub" data-add="1" style="width:100%;margin:0 0 14px">＋ 病院をもう1つ追加する</button>':'';
+    }
+    var v=S[cur][f.k];
+    if(f.t==='group')return '<h3>'+esc(f.l)+'</h3>';
+    if(f.t==='radio'||f.t==='check'){
+      var type=f.t==='radio'?'radio':'checkbox';
+      return '<fieldset class="fld"><legend>'+esc(f.l)+'</legend><div class="chips">'
+        +f.o.map(function(o){
+          var on=f.t==='radio'?v===o:has(v,o);
+          return '<label class="chip"><input type="'+type+'" name="'+f.k+'" value="'+esc(o)+'"'+(on?' checked':'')+'><span>'+esc(o)+'</span></label>';
+        }).join('')+'</div></fieldset>';
+    }
+    var tp=f.t==='tel'?'tel':f.t;
+    return '<label class="fld"><span>'+esc(f.l)+'</span><input type="'+tp+'" name="'+f.k+'" value="'+esc(v||'')+'"'
+      +(f.ph?' placeholder="'+esc(f.ph)+'"':'')+(f.max?' maxlength="'+f.max+'"':'')
+      +(f.t==='tel'?' inputmode="numeric"':'')+' autocomplete="off">'
+      +(f.h?'<small>'+esc(f.h)+'</small>':'')+'</label>';
+  }
+  function buildForm(){
+    var F=FORMS[cur];
+    $('#ftitle').textContent=F.title;
+    $('#fsub').textContent=F.sub;
+    $('#todo').innerHTML='<b>提出のまえに</b><ul>'+F.todo.map(function(t){return '<li>'+esc(t)+'</li>'}).join('')+'</ul>';
+    $('#fields').innerHTML=F.fields.map(fieldHTML).join('');
+  }
+  function fit(){
+    var frame=$('#frame'),sheet=$('#sheet');
+    var w=frame.clientWidth-24,full=sheet.offsetWidth;
+    var sc=Math.min(1,w/full);
+    sheet.style.transform=sc<1?'scale('+sc+')':'none';
+    frame.style.height=(sheet.offsetHeight*sc+24)+'px';
+  }
+  function renderSheet(){
+    $('#sheet').innerHTML=FORMS[cur].sheet(S[cur]);
+    fit();
+  }
+  function renderAll(){buildTabs();buildForm();renderSheet();var o=document.getElementById('imgOut');if(o)o.hidden=true}
+
+  $('#tabs').addEventListener('click',function(e){
+    var b=e.target.closest('.tab');if(!b)return;
+    cur=b.getAttribute('data-id');renderAll();if(history.replaceState)history.replaceState(null,'','#'+cur);
+    document.getElementById('tabs').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  function onInput(e){
+    var el=e.target;if(!el.name)return;
+    if(el.type==='checkbox'){
+      var arr=S[cur][el.name]||[];
+      var i=arr.indexOf(el.value);
+      if(el.checked&&i<0)arr.push(el.value);
+      if(!el.checked&&i>=0)arr.splice(i,1);
+      S[cur][el.name]=arr;
+    }else{
+      S[cur][el.name]=el.value;
+    }
+    renderSheet();
+  }
+  $('#fields').addEventListener('click',function(e){
+    var b=e.target.closest('[data-add]');if(!b)return;
+    S[cur].hcount=Math.min(4,(S[cur].hcount||1)+1);
+    buildForm();renderSheet();
+  });
+  $('#fields').addEventListener('input',onInput);
+  $('#fields').addEventListener('change',onInput);
+
+  var clearArm=null;
+  $('#clearBtn').addEventListener('click',function(){
+    var b=this;
+    if(!clearArm){
+      b.textContent='もう一度押すと消えます';b.classList.add('warn');
+      clearArm=setTimeout(function(){clearArm=null;b.textContent='入力を消す';b.classList.remove('warn')},4000);
+      return;
+    }
+    clearTimeout(clearArm);clearArm=null;b.textContent='入力を消す';b.classList.remove('warn');
+    initState(cur);
+    buildForm();renderSheet();
+    $('#imgOut').hidden=true;
+    $('#msg').textContent='入力を消しました。';
+  });
+  $('#printBtn').addEventListener('click',function(){
+    var out=$('#imgOut'),btn=this;
+    if(typeof html2canvas!=='function'){$('#msg').textContent='画像を作れませんでした。通信状態を確かめて、ページを開き直してください。';return}
+    btn.disabled=true;$('#msg').textContent='画像を作っています…';
+    var sheet=$('#sheet'),frame=$('#frame');
+    sheet.style.transform='none';frame.style.height='auto';
+    html2canvas(sheet,{scale:2,backgroundColor:'#ffffff',useCORS:true}).then(function(cv){
+      fit();
+      out.innerHTML='<p><b>できました。</b>画像を長押し（PCは右クリック）して保存してください。A4の用紙に印刷して提出します。</p><img alt="'+esc(FORMS[cur].title)+'の画像" src="'+cv.toDataURL('image/png')+'">';
+      out.hidden=false;btn.disabled=false;
+      $('#msg').textContent='下に画像ができました。';
+      out.scrollIntoView({behavior:'smooth',block:'start'});
+    }).catch(function(){
+      fit();btn.disabled=false;
+      $('#msg').textContent='画像を作れませんでした。もう一度押してみてください。';
+    });
+  });
+  window.addEventListener('resize',fit);
+  window.addEventListener('beforeprint',function(){$('#sheet').style.transform='none'});
+  window.addEventListener('afterprint',fit);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+  renderAll();
+  function fromHash(){var h=(location.hash||'').slice(1);if(FORMS[h]&&h!==cur){cur=h;renderAll()}}
+  fromHash();
+  window.addEventListener('hashchange',fromHash);
+})();
+</script>
+
+</body></html>
