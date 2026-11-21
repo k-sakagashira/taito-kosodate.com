@@ -1,0 +1,338 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.mode{text-decoration:none}
+.mode[aria-current="page"]{background:var(--yellow);border-color:#2A2112}
+.mode[aria-current="page"] small{color:#2A2112}
+</style></head><body>
+<title>このサイトについて｜台東区 子育てナビ</title>
+<meta name="color-scheme" content="light only">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --yellow:#FFC400;
+  --yellow-soft:#FFF3B8;
+  --yellow-wash:#FFFAE0;
+  --ink:#2A2112;
+  --ink-sub:#5E5340;
+  --line:#E7D9A6;
+  --bg:#FFFEF8;
+  --card:#FFFFFF;
+  --link:#164E8A;
+  --warn-bg:#FFF0D6;
+  --warn-ink:#7A3B00;
+  --mint:#DDF2E7;
+  --mint-ink:#0E5B3A;
+  --font:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.85;-webkit-text-size-adjust:100%}
+a{color:var(--link)}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--link);outline-offset:2px;border-radius:6px}
+
+/* hero */
+.hero{background:var(--yellow-wash);color:var(--ink);padding:24px 20px 30px;border-bottom:8px solid var(--yellow)}
+.hero-in{max-width:720px;margin:0 auto}
+.hero-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.hero-top svg{width:56px;height:56px;flex:0 0 auto}
+.hero small{display:block;font-weight:700;font-size:14px;letter-spacing:.04em;margin:0}
+.hero h1{margin:0;font-size:clamp(28px,8vw,40px);line-height:1.3;font-weight:900}
+.hero p{margin:14px 0 0;font-size:17px;font-weight:500}
+.asof{margin-top:14px;font-size:12.5px;background:var(--card);border:1px solid var(--line);display:inline-block;padding:4px 12px;border-radius:999px}
+
+/* sticky nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:2px solid var(--yellow)}
+.nav-in{max-width:720px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
+.nav-in::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;text-decoration:none;color:var(--ink);font-weight:700;font-size:14px;padding:7px 14px;border-radius:999px;border:2px solid var(--line);background:var(--card);white-space:nowrap}
+.nav a[aria-current="true"]{background:var(--yellow);border-color:var(--yellow);color:#2A2112}
+
+main{max-width:720px;margin:0 auto;padding:8px 16px 40px}
+
+/* route (timeline) */
+.stage{position:relative;padding:28px 0 6px 52px}
+.stage::before{content:"";position:absolute;left:19px;top:0;bottom:0;width:6px;background:var(--yellow);border-radius:3px}
+.stage.first::before{top:40px}
+.stage.last::before{bottom:calc(100% - 64px)}
+.stop{position:absolute;left:0;top:26px;width:44px;height:44px;border-radius:50%;background:var(--yellow);color:#2A2112;border:4px solid var(--bg);box-shadow:0 0 0 3px #2A2112;display:grid;place-items:center;font-weight:900;font-size:19px}
+.stage h2{margin:0;font-size:24px;line-height:1.35;font-weight:900}
+.when{margin:2px 0 0;color:var(--ink-sub);font-size:14px;font-weight:500}
+.lead{margin:12px 0 14px;font-size:16.5px}
+
+.deadline{background:var(--warn-bg);color:var(--warn-ink);border-radius:14px;padding:14px 16px;margin:0 0 16px;font-size:16.5px}
+.deadline b{font-weight:900}
+.deadline ul{margin:8px 0 0;padding-left:1.2em}
+.deadline li{margin:3px 0}
+
+/* services */
+.svc{border-top:1px solid var(--line)}
+.svc:last-child{border-bottom:1px solid var(--line)}
+.svc summary{list-style:none;cursor:pointer;padding:16px 2px 16px 0;display:grid;grid-template-columns:46px 1fr 24px;gap:0 12px;align-items:start;min-height:56px}
+.ic{grid-column:1;grid-row:1;width:46px;height:46px;border-radius:14px;background:var(--mint);color:var(--mint-ink);display:grid;place-items:center}
+.ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.txt{grid-column:2;display:flex;flex-direction:column;gap:2px}
+.svc summary::-webkit-details-marker{display:none}
+.svc summary::after{content:"＋";grid-column:3;grid-row:1;justify-self:end;font-weight:900;font-size:20px;line-height:1.4;color:var(--ink-sub)}
+.svc[open] summary::after{content:"－"}
+.svc .name{font-weight:900;font-size:18.5px;line-height:1.45}
+.svc .one{font-size:15.5px;color:var(--ink-sub);line-height:1.6}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+.tag{font-size:12.5px;font-weight:700;padding:1px 10px;border-radius:999px;background:var(--mint);color:var(--mint-ink)}
+.tag.must{background:#2A2112;color:#FFC400}
+.body{padding:0 0 20px;font-size:17px;line-height:1.85}
+.body dl{margin:0}
+.body dt{font-weight:700;color:var(--mint-ink);font-size:14px;margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.body dt:first-child{margin-top:2px;padding-top:0;border-top:0}
+.body dd{margin:3px 0 0}
+.body b{font-weight:900;background:linear-gradient(transparent 60%,var(--yellow-soft) 60%)}
+.dad{margin:16px 0 0;padding:12px 14px;background:var(--yellow-wash);border-left:5px solid var(--yellow);border-radius:0 10px 10px 0;font-size:16px}
+.dad b{font-weight:900;background:none}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.links a{font-size:15px;font-weight:700;text-decoration:none;padding:12px 16px;min-height:48px;display:inline-flex;align-items:center;border-radius:999px;background:var(--ink);color:var(--bg)}
+.links a.tel{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+
+.mini{margin:14px 0 0;padding:0;list-style:none}
+.mini li{padding:12px 0;border-top:1px solid var(--line);font-size:16.5px}
+.mini li:last-child{border-bottom:1px solid var(--line)}
+.mini a{font-weight:700}
+.mini span{display:block;color:var(--ink-sub);font-size:14.5px}
+
+/* help + contacts */
+.sec{padding:32px 0 0}
+.sec h2{margin:0 0 6px;font-size:22px;font-weight:900;border-left:8px solid var(--yellow);padding-left:12px}
+.tel-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14.5px}
+.tel-table th,.tel-table td{text-align:left;padding:10px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.tel-table th{font-weight:700;width:58%}
+.tel-table td a{font-weight:700;white-space:nowrap}
+
+.done{text-align:center;padding:40px 8px 8px}
+.done svg{width:96px;height:96px}
+.done h2{margin:8px 0 6px;font-size:22px;font-weight:900}
+.done p{margin:0 auto;max-width:28em;font-size:16.5px;color:var(--ink-sub)}
+.find{margin-top:20px;padding:20px 16px 18px;background:var(--yellow-wash);border:2px solid var(--line);border-radius:22px}
+.find h2{margin:0;font-size:22px;font-weight:900;border-left:8px solid var(--yellow);padding-left:12px}
+.band{margin-top:44px;padding-top:22px;border-top:8px solid var(--yellow)}
+.band h2{margin:0;font-size:24px;font-weight:900}
+.band p{margin:6px 0 0;color:var(--ink-sub);font-size:16px}
+.nav .sep{flex:0 0 auto;width:2px;background:var(--line);margin:4px 2px;border-radius:2px}
+.find .lead{margin:10px 0 14px}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pbtn{font:inherit;color:var(--ink);text-align:left;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:14px 12px;min-height:112px;display:flex;flex-direction:column;gap:8px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.pbtn b{font-size:17.5px;font-weight:900;line-height:1.4}
+.pbtn small{display:block;font-size:13.5px;color:var(--ink-sub);font-weight:500;line-height:1.5}
+.pbtn[aria-expanded="true"]{background:var(--yellow);border-color:#2A2112;color:#2A2112}
+.pbtn[aria-expanded="true"] small{color:#2A2112}
+.pbtn[aria-expanded="true"] .ic{background:#FFFFFF}
+.ppanel{margin-top:12px;border:2px solid #2A2112;border-radius:18px;padding:4px 16px 8px;background:var(--card)}
+.ppanel[hidden]{display:none}
+.ppanel h3{margin:14px 0 6px;font-size:19px;font-weight:900}
+.urgent{background:var(--warn-bg);color:var(--warn-ink);border-radius:12px;padding:10px 12px;margin:8px 0 4px;font-size:16.5px;font-weight:700}
+.pitem{display:block;width:100%;text-align:left;font:inherit;color:var(--ink);background:none;border:0;border-top:1px solid var(--line);padding:14px 0;text-decoration:none;cursor:pointer;min-height:56px}
+.pitem .t{display:block;font-weight:900;font-size:17.5px;line-height:1.5}
+.pitem .d{display:block;color:var(--ink-sub);font-size:15px;line-height:1.6}
+.pitem .go{display:inline-block;margin-top:4px;font-size:14px;font-weight:700;color:var(--link)}
+@keyframes flash{from{background:var(--yellow-soft)}to{background:transparent}}
+.svc.flash{animation:flash 1.8s ease-out}
+@media (prefers-reduced-motion:reduce){.svc.flash{animation:none}}
+footer{background:var(--yellow-wash);border-top:4px solid var(--yellow);padding:26px 20px calc(30px + env(safe-area-inset-bottom,0px));font-size:13.5px;color:var(--ink-sub)}
+footer .in{max-width:720px;margin:0 auto}
+footer p{margin:0 0 10px}
+
+
+
+/* ===== 書類作成 ===== */
+.notice{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:8px;padding:10px 12px;font-size:.88rem;margin:12px 0}
+.notice b{display:block;margin-bottom:2px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 8px;margin:0 -16px;padding-left:16px;padding-right:16px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:2px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:.92rem;padding:8px 14px;border-radius:999px;cursor:pointer;min-height:44px}
+.tab[aria-selected="true"]{background:var(--y);border-color:var(--y);color:var(--y-ink);font-weight:700}
+.tab:focus-visible,.btn:focus-visible,input:focus-visible{outline:3px solid #1B6FD8;outline-offset:2px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 14px 4px;margin-top:10px}
+.card h2{font-size:1.05rem;margin:0 0 2px}
+.card .sub{margin:0 0 8px;color:var(--muted);font-size:.88rem}
+#fields h3{font-size:.95rem;margin:16px 0 6px;padding:2px 0 2px 10px;border-left:6px solid var(--y)}
+.fld{display:block;margin:0 0 12px;border:0;padding:0;min-width:0}
+.fld>span,.fld>legend{display:block;font-size:.88rem;font-weight:700;margin-bottom:3px;padding:0}
+.fld input[type=text],.fld input[type=tel],.fld input[type=date]{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:2px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);min-height:46px}
+.fld input:focus{border-color:var(--y)}
+.fld small{display:block;color:var(--muted);font-size:.8rem;margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chip span{display:block;border:2px solid var(--line);border-radius:8px;padding:9px 12px;background:var(--bg);font-size:.92rem;min-height:44px}
+.chip input:checked+span{background:var(--y-soft);border-color:var(--y);font-weight:700}
+.chip input:focus-visible+span{outline:3px solid #1B6FD8;outline-offset:2px}
+.todo{background:var(--y-soft);border-radius:8px;padding:10px 12px;margin:6px 0 12px;font-size:.9rem}
+.todo ul{margin:4px 0 0;padding-left:1.2em}
+.actions{position:sticky;bottom:0;background:linear-gradient(to top,var(--bg) 70%,transparent);padding:12px 0 calc(8px + env(safe-area-inset-bottom,0px));margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.btn{flex:1 1 160px;font:inherit;font-weight:700;font-size:1rem;border:0;border-radius:10px;padding:13px 16px;background:var(--y);color:var(--y-ink);cursor:pointer;min-height:50px;box-shadow:0 2px 0 rgba(0,0,0,.25)}
+.btn.sub{background:var(--surface);border:2px solid var(--line);color:var(--ink);box-shadow:none;flex:0 1 auto}
+.msg{font-size:.85rem;color:var(--muted);margin:4px 0 0;min-height:1.2em}
+.preview-title{margin:22px 0 6px;font-size:.95rem;font-weight:700}
+.sheet-frame{width:100%;overflow:hidden;background:#d8d4c0;border-radius:8px;padding:0;position:relative}
+.sheet{width:210mm;min-height:297mm;background:#fff;color:#000;padding:16mm 16mm 12mm;transform-origin:top left;font-family:var(--sheetfont),"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;font-size:10.5pt;line-height:1.6}
+.sheet .no{font-size:9pt}
+.sheet h2{font-size:15pt;text-align:center;margin:4mm 0 6mm;letter-spacing:.12em;line-height:1.5}
+.sheet p{margin:0}
+.sheet .r{text-align:right;margin:2mm 0}
+.sheet table.t{width:100%;border-collapse:collapse;table-layout:fixed}
+.sheet table.t th,.sheet table.t td{border:1px solid #000;padding:2.6mm 3mm;vertical-align:middle;text-align:left;font-weight:400;word-break:break-all}
+.sheet table.t th{background:#fff;text-align:center;font-size:9.5pt}
+.sheet .w1{width:27mm}.sheet .w2{width:30mm}
+.sheet .gray{background:#ddd}
+.sheet .circ{display:inline-block;border:1.2px solid #000;border-radius:50%;padding:0 1.5mm;line-height:1.5}
+.sheet .opt{display:inline-block;padding:0 1.5mm;line-height:1.5;border:1.2px solid transparent}
+.sheet .row2{display:flex;justify-content:space-between;gap:6mm;align-items:center}
+.sheet .cells{display:inline-flex}
+.sheet .cells i{display:inline-block;width:7mm;height:8.5mm;border:1px solid #000;border-left-width:0;text-align:center;font-style:normal;line-height:8.5mm;font-size:11pt}
+.sheet .cells i:first-child{border-left-width:1px}
+.sheet .small{font-size:9pt}
+.sheet .mt{margin-top:5mm}
+.sheet .box{border:1px solid #000;padding:3mm}
+.sheet .dense{font-size:9pt;line-height:1.45}
+.sheet .dense h2{font-size:13pt;margin:1mm 0 3mm}
+.sheet .dense table.t th,.sheet .dense table.t td{padding:1.3mm 2mm;font-size:8.5pt}
+.sheet .dense .mt{margin-top:2.5mm}
+.sheet .dense .cells i{width:6.4mm;height:6.5mm;line-height:6.5mm;font-size:10pt}
+.sheet .dense .r{margin:1mm 0}
+/* ===== 統合用 ===== */
+:root{
+  --surface:#FFFFFF; --muted:var(--ink-sub); --y:var(--yellow); --y-ink:#2A2112; --y-soft:var(--yellow-soft);
+  --warn-line:#E8A860;
+  --sheetfont:"BIZ UDPGothic","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+}
+.hero{padding-inline:0}
+.hero-in{padding-inline:16px}
+.asof{border-radius:12px}
+.modes{max-width:720px;margin:20px auto 0;padding-inline:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mode{font:inherit;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:18px;padding:12px 14px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:2px;min-height:72px;box-shadow:0 2px 0 rgba(42,33,18,.12)}
+.mode b{font-size:18px;font-weight:900;line-height:1.35}
+.mode small{font-size:13px;color:var(--ink-sub);line-height:1.4}
+.mode[aria-selected="true"]{background:var(--yellow);border-color:#2A2112}
+.mode[aria-selected="true"] small{color:#2A2112}
+.mode:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+#view-guide .nav{margin-top:14px}
+@media (min-width:700px){
+  .nav-in{gap:6px;padding-inline:16px}
+  .nav a{padding:6px 11px;font-size:13.5px}
+  .forms-wrap .tabs{flex-wrap:wrap;overflow:visible;margin:0;padding:4px 0 8px}
+}
+.forms-wrap .sheet-frame{padding:12px;background:#E9E3C6;box-sizing:border-box}
+.forms-wrap .sheet{box-shadow:0 1px 6px rgba(42,33,18,.25)}
+.forms-wrap{max-width:720px;margin:0 auto;padding:18px 16px 48px}
+.forms-wrap>h2{margin:6px 0 4px;font-size:24px;font-weight:900;border-left:8px solid var(--yellow);padding-left:12px;text-wrap:balance}
+.forms-wrap>.intro{margin:0 0 4px;color:var(--ink-sub);font-size:15.5px}
+.forms-wrap .card{border-radius:18px}
+.forms-wrap .fld input[type=text],.forms-wrap .fld input[type=tel],.forms-wrap .fld input[type=date]{background:var(--bg)}
+.links button.form{font:inherit;font-size:15px;font-weight:700;padding:12px 16px;min-height:48px;display:inline-flex;align-items:center;border-radius:999px;background:var(--yellow);color:#2A2112;border:2px solid #2A2112;cursor:pointer}
+.forms-wrap .tabs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));overflow:visible;margin:0;padding:4px 0 8px}
+.forms-wrap .tab{white-space:normal;word-break:keep-all;overflow-wrap:anywhere;border-radius:14px;line-height:1.35;padding:8px 10px}
+.btn.sub.warn{background:var(--warn-bg);border-color:var(--warn-line);color:var(--warn-ink)}
+#imgOut{margin-top:14px;padding:14px;border:2px solid #2A2112;border-radius:16px;background:var(--card)}
+#imgOut p{margin:0 0 10px;font-size:15px}
+#imgOut img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.foot{margin-top:24px;color:var(--ink-sub);font-size:13.5px}
+
+
+@media print{
+  @page{size:A4;margin:0}
+  html,body{background:#fff!important}
+  .noprint,#view-guide{display:none!important}
+  #view-forms{display:block!important}
+  .forms-wrap{padding:0;max-width:none}
+  .sheet-frame{background:none;border-radius:0;height:auto!important;overflow:visible}
+  .sheet{transform:none!important;height:auto;min-height:296mm;overflow:visible;margin:0}
+  :root{padding:0}
+}
+.topbar{position:sticky;top:0;z-index:10;background:var(--yellow-wash);border-bottom:3px solid var(--yellow)}
+.topbar a{display:block;max-width:720px;margin:0 auto;padding:12px 16px;font-weight:700;text-decoration:none;color:var(--ink)}
+.about .meta{margin:0 0 6px;color:var(--ink-sub);font-size:14px}
+.about h3{margin:26px 0 6px;font-size:19px;font-weight:900}
+.about h4{margin:18px 0 4px;font-size:16px;font-weight:700}
+.about p,.about li{font-size:15.5px;line-height:1.8}
+.about p{margin:0 0 10px}
+.about ul{margin:0 0 10px;padding-left:1.3em}
+.about .toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px;padding:0;list-style:none}
+.about .toc a{display:inline-block;padding:7px 14px;border:2px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;font-size:14px;text-decoration:none}
+.about .contact{list-style:none;padding:0}
+.about .contact a{font-weight:700}
+</style>
+
+
+<nav class="topbar" aria-label="もどる"><a href="../">← 子育てナビにもどる</a></nav>
+<main class="forms-wrap about">
+  <h2>このサイトについて</h2>
+  <p class="meta">台東区 子育てナビ　｜　2026年11月21日 制定</p>
+
+  <p>台東区 子育てナビは、台東区で妊娠・出産・子育てをしている人が「いつ、どこへ行けば、何が受けられるか」をひと目で分かるように、区の支援を時期ごとにまとめたサイトです。手続きの書類も、スマホで作れるようにしています。</p>
+  <p>このサイトは台東区の公式サイトではありません。「未来へつなぐバトン」が運営しています。</p>
+
+  <ul class="toc">
+    <li><a href="#terms">ご利用にあたって</a></li>
+    <li><a href="#privacy">プライバシー</a></li>
+    <li><a href="#contact">お問い合わせ</a></li>
+  </ul>
+
+  <h3 id="terms">ご利用にあたって</h3>
+
+  <h4>1. 情報の正しさについて</h4>
+  <p>このサイトの内容は、台東区の公式ホームページ「<a href="https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/shussan/akatyankosodateinfo.html" target="_blank" rel="noopener">こんにちは 赤ちゃん～赤ちゃんが生まれた方へ～</a>」と、そこからたどれる各ページをもとにまとめたものです。確認した日は、子育てナビのトップページの上に書いています。</p>
+  <p>金額・日程・条件などは変わることがあり、正しさや最新であることは保証できません。申し込む前に、必ず各項目の「区のページ」か窓口で最新の内容を確かめてください。</p>
+
+  <h4>2. 書類づくりについて</h4>
+  <p>「書類をつくる」のページは、区が公開している様式をもとに、項目を再現したものです。区の正式な様式そのものではありません。提出する前に、子育て支援課 給付担当（03-5246-1232）へ、この書式で受け付けてもらえるか確認してください。</p>
+
+  <h4>3. 責任について</h4>
+  <p>このサイトを使ったことで生じた損害について、運営者は責任を負いかねます。</p>
+  <p>子どもの具合が急に悪くなったときなど、急ぐときは迷わず 119番へ連絡してください。</p>
+
+  <h4>4. サイトの変更・終了</h4>
+  <p>運営者は、予告なくサイトの内容を変えたり、公開を一時停止・終了したりすることがあります。</p>
+
+  <h3 id="privacy">プライバシー</h3>
+
+  <h4>1. 集める情報</h4>
+  <p>このサイトは、名前・メールアドレス・電話番号などの個人情報を集めません。会員登録や書きこみの仕組みもありません。アクセス解析（Google アナリティクスなど）も使っていません。</p>
+
+  <h4>2. 書類づくりで入力した内容</h4>
+  <p>「書類をつくる」で入力した内容は、お使いの端末（ブラウザ）の中だけで処理します。運営者を含め、どこにも送信しません。ページを閉じたり読み込み直したりすると消えます。</p>
+  <p>できあがった書類の画像も、端末の中で作っています。保存するかどうかは、ご自身で決めてください。</p>
+
+  <h4>3. 端末への保存</h4>
+  <p>クッキーなど、お使いの端末に情報を保存することはしていません。</p>
+
+  <h4>4. 外部サービスとの通信</h4>
+  <p>ページを表示するために、外部のサービスと通信することがあります。その際、IPアドレスやブラウザの種類などが送られ、それぞれのサービスの方針にしたがって扱われます。入力した内容は送られません。</p>
+  <p>「区のページ」などのリンクを押すと、台東区など別のサイトに移ります。移った先での情報の扱いは、それぞれのサイトの方針によります。</p>
+
+  <h4>5. 変更について</h4>
+  <p>この内容を変えるときは、このページでお知らせします。</p>
+
+  <h3 id="contact">お問い合わせ</h3>
+  <p>運営：未来へつなぐバトン</p>
+  <p>内容の間違いや、制度が変わったことに気づいたときは、次のどちらかから教えてください。</p>
+  <ul class="contact">
+    <li><a href="https://line.me/R/ti/p/%40888ujyjg" target="_blank" rel="noopener">LINE：@888ujyjg</a></li>
+    <li><a href="https://x.com/to_okamiya" target="_blank" rel="noopener">X：@to_okamiya</a></li>
+  </ul>
+  <p>LINE・Xで送ると、アカウント名が運営者に見えます。いただいた内容は、お返事とサイトの修正にだけ使い、それぞれのサービスの方針にしたがって扱われます。</p>
+  <p>制度そのものについてのご質問は、各項目に書いてある区の窓口へお問い合わせください。</p>
+</main>
+
+<footer class="noprint">
+  <div class="in">
+    <p>このページは、台東区の公式ホームページ「こんにちは 赤ちゃん」と、そこからたどれる各ページの内容をもとにした、「未来へつなぐバトン」がまとめたものです。台東区が作ったものではありません。</p>
+    <p><a href="./">このサイトについて（ご利用にあたって・プライバシー・お問い合わせ）</a></p>
+    <p>書類づくりのページは、区が公開している様式をもとに項目を再現したものです。提出前に、子育て支援課 給付担当（03-5246-1232）へこの書式で受け付けてもらえるか確認してください。</p>
+    <p>金額・日程・条件は変わることがあります。申し込む前に、必ず各項目の「区のページ」か窓口で最新の内容を確認してください。</p>
+    <p>出典：<a href="https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/shussan/akatyankosodateinfo.html">台東区ホームページ（こんにちは 赤ちゃん～赤ちゃんが生まれた方へ～）</a></p>
+  </div>
+</footer>
+
+</body></html>

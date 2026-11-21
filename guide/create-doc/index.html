@@ -171,7 +171,7 @@ footer p{margin:0 0 10px}
 .todo{background:var(--y-soft);border-radius:8px;padding:10px 12px;margin:6px 0 12px;font-size:.9rem}
 .todo ul{margin:4px 0 0;padding-left:1.2em}
 .actions{position:sticky;bottom:0;background:linear-gradient(to top,var(--bg) 70%,transparent);padding:12px 0 calc(8px + env(safe-area-inset-bottom,0px));margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
-.btn{flex:1 1 220px;font:inherit;font-weight:700;font-size:1rem;border:0;border-radius:10px;padding:13px 16px;background:var(--y);color:var(--y-ink);cursor:pointer;min-height:50px;box-shadow:0 2px 0 rgba(0,0,0,.25)}
+.btn{flex:1 1 160px;font:inherit;font-weight:700;font-size:1rem;border:0;border-radius:10px;padding:13px 16px;background:var(--y);color:var(--y-ink);cursor:pointer;min-height:50px;box-shadow:0 2px 0 rgba(0,0,0,.25)}
 .btn.sub{background:var(--surface);border:2px solid var(--line);color:var(--ink);box-shadow:none;flex:0 1 auto}
 .msg{font-size:.85rem;color:var(--muted);margin:4px 0 0;min-height:1.2em}
 .preview-title{margin:22px 0 6px;font-size:.95rem;font-weight:700}
@@ -231,6 +231,8 @@ footer p{margin:0 0 10px}
 .forms-wrap .card{border-radius:18px}
 .forms-wrap .fld input[type=text],.forms-wrap .fld input[type=tel],.forms-wrap .fld input[type=date]{background:var(--bg)}
 .links button.form{font:inherit;font-size:15px;font-weight:700;padding:12px 16px;min-height:48px;display:inline-flex;align-items:center;border-radius:999px;background:var(--yellow);color:#2A2112;border:2px solid #2A2112;cursor:pointer}
+.forms-wrap .tabs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));overflow:visible;margin:0;padding:4px 0 8px}
+.forms-wrap .tab{white-space:normal;word-break:keep-all;overflow-wrap:anywhere;border-radius:14px;line-height:1.35;padding:8px 10px}
 .btn.sub.warn{background:var(--warn-bg);border-color:var(--warn-line);color:var(--warn-ink)}
 #imgOut{margin-top:14px;padding:14px;border:2px solid #2A2112;border-radius:16px;background:var(--card)}
 #imgOut p{margin:0 0 10px;font-size:15px}
@@ -257,13 +259,13 @@ footer p{margin:0 0 10px}
     <div class="hero-top"><svg viewBox="0 0 64 64" role="img" aria-label="ひよこ"><path d="M30 12c-1-5 2-8 5-8 0 3-1 5-3 8z" fill="#FFC400" stroke="#2A2112" stroke-width="2.4" stroke-linejoin="round"/><circle cx="32" cy="36" r="22" fill="#FFC400" stroke="#2A2112" stroke-width="2.6"/><circle cx="24" cy="32" r="2.8" fill="#2A2112"/><circle cx="40" cy="32" r="2.8" fill="#2A2112"/><circle cx="20" cy="39" r="3.6" fill="#FF9E8F" opacity=".7"/><circle cx="44" cy="39" r="3.6" fill="#FF9E8F" opacity=".7"/><path d="M28 37h8l-4 6z" fill="#F08A24" stroke="#2A2112" stroke-width="1.8" stroke-linejoin="round"/><path d="M26 58v4M38 58v4" stroke="#2A2112" stroke-width="2.4" stroke-linecap="round"/></svg><small>台東区の妊娠・出産・子育てガイド</small></div>
     <h1>いつ、どこへ行けば、<br>何が受けられる？</h1>
     <p>赤ちゃんが生まれる前から3歳ごろまで。台東区の支援を時期ごとにまとめ、手続きの書類もスマホでつくれるようにしました。</p>
-    <span class="asof">区の公式ページをもとにしたまとめ（2026年11月21日に確認）</span>
+    <span class="asof">区の公式ページをもとにしたまとめ<span style="white-space:nowrap">（2026年11月21日に確認）</span></span>
   </div>
 </header>
 
 <nav class="modes noprint" id="modes" aria-label="使い方を選ぶ">
   <a class="mode" href="../"><b>支援をさがす</b><small>時期・困りごとから</small></a>
-  <a class="mode" href="./" aria-current="page"><b>書類をつくる</b><small>医療証・手当など6種類</small></a>
+  <a class="mode" href="./" aria-current="page"><b>書類をつくる</b><small>医療証・手当など<span style="white-space:nowrap">6種類</span></small></a>
 </nav>
 <main class="forms-wrap" id="view-forms">
   <h2>手続きの書類をつくる</h2>
@@ -299,7 +301,8 @@ footer p{margin:0 0 10px}
 </main>
 <footer class="noprint">
   <div class="in">
-    <p>このページは、台東区の公式ホームページ「こんにちは 赤ちゃん」と、そこからたどれる各ページの内容をもとにした、個人によるまとめです。台東区が作ったものではありません。</p>
+    <p>このページは、台東区の公式ホームページ「こんにちは 赤ちゃん」と、そこからたどれる各ページの内容をもとにした、「未来へつなぐバトン」がまとめたものです。台東区が作ったものではありません。</p>
+    <p><a href="../about/">このサイトについて（ご利用にあたって・プライバシー・お問い合わせ）</a></p>
     <p>書類づくりのページは、区が公開している様式をもとに項目を再現したものです。提出前に、子育て支援課 給付担当（03-5246-1232）へこの書式で受け付けてもらえるか確認してください。</p>
     <p>金額・日程・条件は変わることがあります。申し込む前に、必ず各項目の「区のページ」か窓口で最新の内容を確認してください。</p>
     <p>出典：<a href="https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/shussan/akatyankosodateinfo.html">台東区ホームページ（こんにちは 赤ちゃん～赤ちゃんが生まれた方へ～）</a></p>
